@@ -1,0 +1,72 @@
+[
+    {
+        "staffId": "09912002",
+        "name": "王大",
+        "position": "人事部經理",
+        "email": "wangone@walsincloud.com.xx",
+        "password": "wangone"
+    },
+    {
+        "staffId": "10611001",
+        "name": "王二",
+        "position": "會計部主任",
+        "email": "wangtwo@walsincloud.com.xx",
+        "password": "wangtwo"
+    },
+    {
+        "staffId": "10312023",
+        "name": "王三",
+        "position": "人事部主任",
+        "email": "wangthree@walsincloud.com.xx",
+        "password": "wangthree"
+    },
+    {
+        "staffId": "10615099",
+        "name": "張九九",
+        "position": "業務部部員",
+        "email": "zhangnine@walsincloud.com.xx",
+        "password": "zhangnine"
+    },
+    {
+        "staffId": "10413007",
+        "name": "陳七七",
+        "position": "財務部主管",
+        "email": "chenseven@walsincloud.com.xx",
+        "password": "chenseven"
+    },
+    {
+        "staffId": "10413001",
+        "name": "陳乙己",
+        "position": "財務部經理",
+        "email": "chenyiji@walsincloud.com.xx",
+        "password": "chenyiji"
+    },
+    {
+        "staffId": "10413002",
+        "name": "陳丙己",
+        "position": "財務部部員",
+        "email": "chenbingji@walsincloud.com.xx",
+        "password": "chenbingji"
+    },
+    {
+        "staffId": "10516006",
+        "name": "林六六",
+        "position": "資訊部部員",
+        "email": "linsix@walsincloud.com.xx",
+        "password": "linsix"
+    },
+    {
+        "staffId": "10616049",
+        "name": "林戚戚",
+        "position": "資訊部部員",
+        "email": "lingseven@walsincloud.com.xx",
+        "password": "lingseven"
+    },
+    {
+        "staffId": "10616033",
+        "name": "林三三",
+        "position": "資訊部經理",
+        "email": "lingthree@walsincloud.com.xx",
+        "password": "lingthree"
+    }
+]

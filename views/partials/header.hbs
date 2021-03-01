@@ -1,0 +1,17 @@
+<nav class="navbar shadow-sm .bg-white">
+    <div class="container" style="text-align: center;">
+        <div class="navbar-brand" style="padding-left: 10%;">
+            <a class="navbar-brand header-title" href="/"><b>華新雲平台</b> </a>
+        </div>
+        <div>
+            {{!-- 判斷有無登入 --}}
+            {{!-- 有登入->顯示使用者名稱跟登出鈕 --}}
+            {{#if isAuthenticated}}
+            Hi, {{name}} &emsp;
+            {{!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">登出</button> --}}
+            <a class="btn btn-outline-primary btn-sm" href="/users/logout">登出</a>
+            {{/if}}
+            {{!-- 沒登入->不顯示 --}}
+        </div>
+    </div>
+</nav>

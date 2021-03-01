@@ -1,0 +1,59 @@
+<div class="container" style="margin-top: 3%;">
+    <div class="row">
+        <div class="col">
+            <label style="font-size: 20px; display: flex; align-items: center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                </svg>
+                &nbsp;通知列表
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="w3-container">
+    <div>
+        <div style="margin: 0 5%;">
+            <table class="table conf-table">
+                <thead>
+                    <tr>
+                        <th scope="col">內容</th>
+                        <th scope="col" class="text-center">寄件者</th>
+                        <th scope="col" class="text-center">發送時間</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{!-- 遍歷通知陣列 --}}
+                    {{#each notices}}
+                    {{!-- 如果已檢查過這筆通知->顯示灰字 --}}
+                    {{#if this.isCheck}}
+                    <tr onclick="tableClick('{{this.confId}}')" style="color: #c8c8c8;">
+                        <td>{{{noticeType this.type this.confInfo.name}}}</td>
+                        {{!-- <td>會議【{{this.confInfo.name}}】附件已上傳</td> --}}
+                        <td class="text-center">{{this.sender.name}}</td>
+                        <td class="text-center">{{this.sendTime}}</td>
+                    </tr>
+                    {{!-- 如果沒有檢查過這筆通知->顯示黑字 --}}
+                    {{else}}
+                    <tr onclick="noticeTableClick('{{this._id}}','{{this.confId}}')">
+                        <td>{{{noticeType this.type this.confInfo.name}}}</td>
+                        {{!-- <td>會議【{{this.confInfo.name}}】附件已上傳</td> --}}
+                        <td class="text-center">{{this.sender.name}}</td>
+                        <td class="text-center">{{this.sendTime}}</td>
+                    </tr>
+                    {{/if}}
+                    {{/each}}
+                </tbody>
+
+            </table>
+            {{!-- 判斷有無通知 --}}
+            {{#if notices}}
+            {{else}}
+            {{!-- 沒有通知 --}}
+            <p class="text-center">目前沒有通知</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

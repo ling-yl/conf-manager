@@ -108,3 +108,8 @@ Listening on port 3000
 ```
 
 9. 打開瀏覽器，前往 [http://localhost:3000/](http://localhost:3000/)，登入後即可使用
+
+```
+帳號：10616049
+密碼：lingseven
+```
